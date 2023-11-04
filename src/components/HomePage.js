@@ -12,15 +12,15 @@ function HomePage() {
 
   const { data: posts, isLoaded } = useQuery("http://localhost:4000/posts")
 
-  useEffect(() => {
-    setIsLoaded(false);
-    fetch("http://localhost:4000/posts")
-      .then((r) => r.json())
-      .then((posts) => {
-        setPosts(posts);
-        setIsLoaded(true);
-      });
-  }, []);
+  // useEffect(() => {
+  //   setIsLoaded(false);
+  //   fetch("http://localhost:4000/posts")
+  //     .then((r) => r.json())
+  //     .then((posts) => {
+  //       setPosts(posts);
+  //       setIsLoaded(true);
+  //     });
+  // }, []);
 
   // set the document title
   // useEffect(() => {
